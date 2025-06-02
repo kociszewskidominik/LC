@@ -30,3 +30,22 @@ class Solution {
     }
 }
 ```
+
+
+Zmienna `sum` do przechowywania wyniku.
+```java
+        int sum = 0;
+```
+
+
+Mapa `m` do przechowywania rzymskich znaków jak np. `D` i odpowiadających im wartościom, np. `500`.
+```java
+        HashMap<Character, Integer> m = new HashMap<>();
+        m.put('I', 1);
+        m.put('V', 5);
+        m.put('X', 10);
+        m.put('L', 50);
+        m.put('C', 100);
+        m.put('D', 500);
+        m.put('M', 1000);
+```
