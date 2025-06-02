@@ -49,3 +49,26 @@ Mapa `m` do przechowywania rzymskich znaków jak np. `D` i odpowiadających im w
         m.put('D', 500);
         m.put('M', 1000);
 ```
+
+
+Główna pętla, pobieramy obecny znak z rzymskiego stringa `c` i następny znak `n`, a następnie ich wartości liczbowe `val1` i `val2` z mapy. Jeżeli `val1` jest mniejsze od `val2`, co oznacza liczbę np. **IV** to odejmujemy od sumy, w innym przypadku dodajemy.
+```java
+for(int i = 0; i < s.length() - 1; i++){
+            char c = s.charAt(i);
+            char n = s.charAt(i + 1);
+            int val1 = m.get(c);
+            int val2 = m.get(n);
+
+            if(val1 < val2){
+                sum -= val1;
+            } else {
+                sum += val1;
+            }
+        }
+```
+
+
+Na koniec dodajemy do sumy wartość ostatniego znaku i zwracamy cały wynik.
+```java
+        return sum += m.get(s.charAt(s.length() - 1));
+```
