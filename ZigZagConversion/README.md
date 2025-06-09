@@ -28,7 +28,7 @@ Obsłużenie przypadków brzegowych, jeśli `numRows == 1` lub `numRows >= s.len
 ```java
   if(numRows == 1 || numRows >= s.length()) return s;
 ```
-Zmienna `cycleLen` to przetrzymywania długości pełnego cyklu, i `result` do przechowywania wyniku.
+Zmienna `cycleLen` do przetrzymywania długości pełnego cyklu, i `result` do przechowywania wyniku.
 ```java
   int cycleLen = 2 * numRows - 2;
   StringBuilder result = new StringBuilder();
